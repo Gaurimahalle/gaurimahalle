@@ -1,31 +1,108 @@
-body {
-    background-color: #000000;  /* Black */
-    color: #FFFFFF;  /* White text */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
 
-nav {
-    background: rgba(0, 0, 0, 0.8); /* Dark overlay */
-    padding: 20px;
+body {
+    background: #000000;  /* Black */
+    color: white;
 }
 
-.btn {
-    background: #E64B2A;  /* Accent orange-red */
-    color: #FFFFFF;
-    padding: 10px 20px;
+header {
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);  /* Dark overlay */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
     text-decoration: none;
+    color: white;
+}
+
+.contact-btn {
+    background: #E64B2A;  /* Accent color */
+    color: white;
+    padding: 8px 16px;
     border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background: #ff5733;  /* Lighter orange for hover */
 }
 
 .hero {
-    background-color: #1A1A1A;  /* Dark gray */
-    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    max-width: 1100px;
+    margin: auto;
+    text-align: left;
 }
 
-.hero h1 {
-    color: #FFFFFF;
+.hero-content {
+    flex: 1;
 }
 
-.hero h3 {
-    color: #E64B2A; /* Accent */
+.hero-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+.hero-content h3 {
+    color: #E64B2A;  /* Accent color */
+    font-size: 22px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 350px;
+    border-radius: 10px;
+    border: 3px solid #E64B2A;  /* Accent color border */
 }
