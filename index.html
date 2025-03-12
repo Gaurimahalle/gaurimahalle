@@ -10,6 +10,13 @@
     
     <!-- Google Fonts for better typography (Optional) -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Add smooth scroll to the entire page -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
 
@@ -18,8 +25,8 @@
         <nav>
             <div class="logo">Gauri Mahalle</div>
             <ul>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Skills</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#">Resume</a></li>
                 <li><a href="#" class="contact-btn">Contact Me</a></li>
             </ul>
@@ -37,6 +44,22 @@
             <!-- Ensure this image file is in the correct path -->
             <img src="photo.jpeg" alt="Gauri Mahalle's photo">
         </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p>
+            I am Gauri Mahalle, a data enthusiast with over 2 years of experience in analyzing, interpreting, and visualizing data.
+            My expertise includes machine learning, data analytics, and cloud platforms. I am passionate about helping businesses 
+            make data-driven decisions through innovative insights.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <p>Python, SQL, Tableau, Power BI, Machine Learning, Data Visualization, Predictive Analytics, Cloud Platforms</p>
     </section>
 
 </body>
